@@ -1,0 +1,154 @@
+$semantic-colors: (
+  "default": var(--sob-color-text-default),
+  "primary": var(--sob-color-text-primary),
+  "secondary": var(--sob-color-text-secondary),
+  "tertiary": var(--sob-color-text-tertiary),
+  "primary-inverse": var(--sob-color-text-primary-inverse),
+  "secondary-inverse": var(--sob-color-text-secondary-inverse),
+  "tertiary-inverse": var(--sob-color-text-tertiary-inverse),
+  "info": var(--sob-color-text-info),
+  "success": var(--sob-color-text-success),
+  "warning": var(--sob-color-text-warning),
+  "danger": var(--sob-color-text-danger),
+  "link": var(--sob-color-text-link),
+  "link-disabled": var(--sob-color-text-link-disabled)
+);
+
+@mixin generate-semantic-color-classes {
+  @each $name, $var in $semantic-colors {
+    .#{$name} {
+      color: #{$var};
+    }
+  }
+}
+
+// Include the mixin to output the classes
+
+@mixin typography($type, $size) {
+    font-family: var(--sob-font-family); 
+    margin: var(--sob-space-0);
+    padding: var(--sob-space-0);
+    &:first-letter {
+        text-transform: uppercase;
+    }
+    // Set typography styles based on type and size
+    @if $type == "paragraph" {
+        font-weight: var(--sob-font-weight-regular);
+        @if $size == "large" {
+            font-size: var(--sob-font-size-6);
+            line-height: var(--sob-font-line-height-9);
+        } @else if $size == "medium" {
+            font-size: var(--sob-font-size-5);
+            line-height: var(--sob-font-line-height-8);
+        } @else if $size == "small" {
+            font-size: var(--sob-font-size-3);
+            line-height: var(--sob-font-line-height-6);
+        } @else if $size == "x-small" {
+            font-size: var(--sob-font-size-2);
+            line-height: var(--sob-font-line-height-4);
+        } @else if $size == "xx-small" {
+            font-size: var(--sob-font-size-1);
+            line-height: var(--sob-font-line-height-3);
+        }
+    } @else if $type == "label" {
+        font-weight: var(--sob-font-weight-medium);
+        @if $size == "large" {
+            font-size: var(--sob-font-size-6);
+            line-height: var(--sob-font-line-height-8);
+        } @else if $size == "medium" {
+            font-size: var(--sob-font-size-5);
+            line-height: var(--sob-font-line-height-5);
+        } @else if $size == "small" {
+            font-size: var(--sob-font-size-3);
+            line-height: var(--sob-font-line-height-3);
+        } @else if $size == "x-small" {
+            font-size: var(--sob-font-size-2);
+            line-height: var(--sob-font-line-height-2);
+        } @else if $size == "xx-small" {
+            font-size: var(--sob-font-size-1);
+            line-height: var(--sob-font-line-height-1);
+        }
+    } @else if $type == "heading" {
+        font-weight: var(--sob-font-weight-semi-bold);
+        @if $size == "large" {
+            font-size: var(--sob-font-size-8);
+            line-height: var(--sob-font-line-height-11);
+        } @else if $size == "medium" {
+            font-size: var(--sob-font-size-7);
+            line-height: var(--sob-font-line-height-10);
+        } @else if $size == "small" {
+            font-size: var(--sob-font-size-6);
+            line-height: var(--sob-font-line-height-9);
+        } @else if $size == "x-small" {
+            font-size: var(--sob-font-size-5);
+            line-height: var(--sob-font-line-height-8);
+        } @else if $size == "xx-small" {
+            font-size: var(--sob-font-size-4);
+            line-height: var(--sob-font-line-height-7);
+        }
+    }
+}
+// Paragraphs
+.font-paragraph-large {
+    @include typography("paragraph", "large");
+}
+
+.font-paragraph-medium {
+    @include typography("paragraph", "medium");
+}
+
+.font-paragraph-small {
+    @include typography("paragraph", "small");
+}
+
+.font-paragraph-x-small {
+    @include typography("paragraph", "x-small");
+}
+
+.font-paragraph-xx-small {
+    @include typography("paragraph", "xx-small");
+}
+
+// Labels
+.font-label-large {
+    @include typography("label", "large");
+}
+
+.font-label-medium {
+    @include typography("label", "medium");
+}
+
+.font-label-small {
+    @include typography("label", "small");
+}
+
+.font-label-x-small {
+    @include typography("label", "x-small");
+}
+.font-label-xx-small {
+    @include typography("label", "xx-small");
+}
+
+// Headings
+.font-heading-large {
+    @include typography("heading", "large");
+}
+
+.font-heading-medium {
+    @include typography("heading", "medium");
+}
+
+.font-heading-small {
+    @include typography("heading", "small");
+}
+
+.font-heading-x-small {
+    @include typography("heading", "x-small");
+}
+
+.font-heading-xx-small {
+    @include typography("heading", "xx-small");
+}
+
+
+@include generate-semantic-color-classes;

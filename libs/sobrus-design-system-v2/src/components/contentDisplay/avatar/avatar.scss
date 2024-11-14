@@ -1,0 +1,72 @@
+.sob-v2-avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sob-color-background-default);
+    background-color: var(--sob-color-background-inverse);
+    min-width: 2rem;
+    min-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    span {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.sob-v2-avatar-xs {
+    min-width: 1rem;
+    min-height: 1rem;
+    width: 1rem;
+    height: 1rem;
+    font-weight: var(--sob-font-weight-regular);
+    font-size: var(--sob-font-size-1);
+}
+
+.sob-v2-avatar-sm {
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: var(--sob-font-size-2);
+}
+
+.sob-v2-avatar-md {
+    min-width: 2rem;
+    min-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: var(--sob-font-size-4);
+}
+
+.sob-v2-avatar-lg {
+    min-width: 3rem;
+    min-height: 3rem;
+    font-size: 1.1875rem;
+}
+
+.sob-v2-avatar-xl {
+    min-width: 4rem;
+    min-height: 4rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: var(--sob-font-size-8);
+}
+
+.sob-v2-avatar-xxl {
+    min-width: 6rem;
+    min-height: 6rem;
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.8125rem;
+}

@@ -1,0 +1,20 @@
+:root {
+    --sob-itemLoader-color: #fafafa;
+    --sob-itemLoader-color-hover: #dcdcdc;
+}
+.sob-v2-itemLoader {
+    background: linear-gradient(
+        90deg,
+        var(--sob-itemLoader-color) 25%,
+        var(--sob-itemLoader-color-hover) 50%,
+        var(--sob-itemLoader-color) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    margin-bottom: 0.25rem;
+    overflow: hidden;
+    border-radius: 6px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

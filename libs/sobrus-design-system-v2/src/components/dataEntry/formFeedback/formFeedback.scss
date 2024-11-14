@@ -1,0 +1,11 @@
+.sob-v2-feedback {
+    display: none;
+    width: 100%;
+    margin-top: var(--sob-space-1);
+    font-size: var(--sob-font-size-3);
+    color: var(--sob-color-background-success-default);
+    font-weight: var(--sob-font-weight-regular);
+}
+.sob-v2-feedback-invalid {
+    color: var(--sob-error-600);
+}

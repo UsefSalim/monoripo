@@ -1,0 +1,63 @@
+.TooltipMenu__menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--sob-gray-white);
+    animation: fadeInAnimationcard ease 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border-radius: var(--sob-border-radius-2);
+    background: #fff;
+    box-shadow:
+        0rem 0rem 0.125rem 0rem rgba(0, 0, 0, 0.16),
+        0rem 0.125rem 0.5rem 0rem rgba(0, 0, 0, 0.16);
+    min-width: 6.25rem;
+}
+
+@keyframes fadeInAnimationcard {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.TooltipMenu__menu-item {
+    display: flex;
+    cursor: pointer;
+    padding: 0.3125rem;
+    width: 100%;
+    margin-left: var(--sob-space-0);
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    text-align: left;
+    padding: 0.62rem 1rem;
+    align-items: center;
+
+    &:hover {
+        background-color: var(--sob-color-palette-secondary);
+
+        .TooltipMenu__menu-item-text {
+            color: var(--sob-color-palette-primary);
+            transform: scale(1.03);
+            font-weight: var(--sob-font-weight-regular);
+        }
+
+        color: var(--sob-color-palette-primary);
+    }
+}
+
+.TooltipMenu__menu-item-text {
+    margin-left: 0.5rem;
+    font-size: 0.725rem;
+    font-weight: var(--sob-font-weight-light);
+    line-height: 1.54;
+    color: #000000;
+}
+
+.TooltipMenu__menu-item:last-child {
+    border-bottom: 0;
+    margin: var(--sob-space-0);
+}

@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "declaration": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "declarationMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"],
+            "@/actions": ["./src/components/actions/index.ts"],
+            "@/animations": ["./src/components/animations/index.ts"],
+            "@/contentDisplay": ["./src/components/contentDisplay/index.ts"],
+            "@/containers": ["./src/components/containers/index.ts"],
+            "@/dataEntry": ["./src/components/dataEntry/index.ts"],
+            "@/exemple": ["./src/components/exemple/index.ts"],
+            "@/feedbacks": ["./src/components/feedbacks/index.ts"],
+            "@/grid": ["./src/components/grid/index.ts"],
+            "@/navigation": ["./src/components/navigation/index.ts"],
+            "@/typography": ["./src/components/typography/typography/typography.tsx"]
+        },
+        "typeRoots": ["node_modules/@types", "src/index.d.ts"]
+    },
+    "include": ["src"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+}

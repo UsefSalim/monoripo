@@ -1,0 +1,25 @@
+.sob-v2-navbar-container {
+    background-color: var(--sob-v2-background-color, #fff);
+    box-shadow: var(--sob-v2-shadow-sm);
+    padding: 0 1.5%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &[data-size='sm'] {
+        height: 3rem;
+    }
+
+    &[data-size='md'] {
+        height: 3.5rem;
+    }
+
+    &[data-size='lg'] {
+        height: 4rem;
+    }
+}
+
+@import './styles/navBarLogo.scss';
+@import './styles/navBarUser.scss';
+@import './styles/navBarItems.scss';

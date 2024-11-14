@@ -1,0 +1,23 @@
+.sob-v2-table-tag {
+    cursor: auto;
+    height: 2.125rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--sob-space-0, 0rem) var(--sob-space-2, 0.5rem);
+    border-radius: var(--sob-space-2, 0.5rem);
+    gap: var(--sob-space-1, 0.25rem);
+    svg,
+    img {
+        display: block;
+    }
+    &-sm {
+        padding: var(--sob-space-1, 0.25rem) var(--sob-space-2, 0.5rem);
+        height: 1.625rem;
+    }
+    &-xs {
+        padding: var(--sob-space-0, 0rem) var(--sob-space-2, 0.5rem);
+        height: 1.125rem;
+        gap: 0.25rem;
+    }
+}

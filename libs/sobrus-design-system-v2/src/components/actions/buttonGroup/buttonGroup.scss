@@ -1,0 +1,24 @@
+.sob-v2-btn-group {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    min-width: fit-content;
+    height: fit-content;
+    border-radius: var(--sob-border-radius-3, 0.5rem);
+    border: 1px solid var(--sob-color-border-primary-default, #dae0e7);
+    background: var(--sob-color-background-primary-default, #fff);
+
+    .sob-v2-btn {
+        border-radius: 0;
+     
+        &:first-child {
+            border-radius: calc(var(--sob-border-radius-3) - 1px) 0 0 calc(var(--sob-border-radius-3) - 1px);
+            border: none;
+        }
+
+        &:last-child {
+            border-radius: 0 calc(var(--sob-border-radius-3) - 1px) calc(var(--sob-border-radius-3) - 1px) 0;
+            border: none;
+        }
+    }
+}

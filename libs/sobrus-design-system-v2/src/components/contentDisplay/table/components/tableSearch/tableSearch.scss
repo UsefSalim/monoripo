@@ -1,0 +1,63 @@
+.sob-v2-table-tr-search {
+    display: table-row;
+    animation-name: in;
+    animation-duration: 0.3s;
+    // .sob-v2-btn {
+    //     flex: 1;
+    // }
+    @keyframes in {
+        from {
+            transform: scale(0.8);
+            opacity: 0.5;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    td {
+        padding: 0.25rem 0.5rem;
+
+        &:last-child {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.75rem;
+            padding-right: 1rem !important;
+        }
+    }
+}
+.sob-v2-table-tr-search-advanced {
+    display: table-row;
+    animation-name: top;
+    animation-duration: 0.3s;
+    @keyframes top {
+        from {
+            transform: translateY(3.75rem);
+            opacity: 0.5;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    td {
+        padding: 0.25rem 0.5rem;
+    }
+}
+.sob-v2-table-tr-out {
+    animation-name: out;
+    animation-duration: 0.2s;
+    @keyframes out {
+        from {
+            transform: scale(1);
+            opacity: 1;
+        }
+        to {
+            transform: scale(0.7);
+            opacity: 0.5;
+        }
+    }
+}
+.sob-v2-table-tr-hide {
+    display: none !important;
+}

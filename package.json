@@ -1,0 +1,11 @@
+{
+    "name": "@sobrus-com/monoripo",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "pnpm -r --parallel dev",
+        "storybook": "pnpm --filter @sobrus-com/tools storybook",
+        "watch": "pnpm --filter @sobrus-com/sobrus-design-system-v2 watch"
+    }
+}

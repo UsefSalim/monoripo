@@ -1,0 +1,175 @@
+@use '../../../globalcss/normalize';
+@use '../../../globalcss/default';
+:root {
+    --sob-font-weight-regular: 400;
+    --sob-font-weight-medium: 500;
+    --sob-font-weight-semi-bold: 600;
+
+    /* Font size */
+    --sob-font-size-1: 0.75rem; /* 12px */
+    --sob-font-size-2: 0.8125rem; /* 13px */
+    --sob-font-size-3: 0.875rem; /* 14px */
+    --sob-font-size-4: 0.9375rem; /* 15px */
+    --sob-font-size-5: 1rem; /* 16px */
+    --sob-font-size-6: 1.125rem; /* 18px */
+    --sob-font-size-7: 1.5rem; /* 24px */
+    --sob-font-size-8: 1.75rem; /* 28px */
+    --sob-font-size-9: 2rem; /* 32px */
+
+    /* Font line height */
+    --sob-font-line-height-1: 1rem; /* 16px */
+    --sob-font-line-height-2: 1.0625rem; /* 17px */
+    --sob-font-line-height-3: 1.125rem; /* 18px */
+    --sob-font-line-height-4: 1.25rem; /* 20px */
+    --sob-font-line-height-5: 1.3125rem; /* 21px */
+    --sob-font-line-height-6: 1.375rem; /* 22px */
+    --sob-font-line-height-7: 1.5rem; /* 24px */
+    --sob-font-line-height-8: 1.6875rem; /* 27px */
+    --sob-font-line-height-9: 2.25rem; /* 36px */
+    --sob-font-line-height-10: 2.625rem; /* 42px */
+    --sob-font-line-height-12: 3rem; /* 48px */
+
+    /* Space */
+    --sob-space-0: 0; /* 0 */
+    --sob-space-025: 0.0625rem; /* 1px */
+    --sob-space-05: 0.125rem; /* 2px */
+    --sob-space-1: 0.25rem; /* 4px */
+    --sob-space-2: 0.5rem; /* 8px */
+    --sob-space-3: 0.75rem; /* 12px */
+    --sob-space-4: 1rem; /* 16px */
+    --sob-space-5: 1.25rem; /* 20px */
+    --sob-space-6: 1.5rem; /* 24px */
+    --sob-space-7: 2rem; /* 32px */
+    --sob-space-8: 2.5rem; /* 40px */
+    --sob-space-9: 3rem; /* 48px */
+    --sob-space-10: 4rem; /* 64px */
+    --sob-space-11: 5rem; /* 80px */
+    --sob-space-12: 6rem; /* 96px */
+    --sob-space-13: 7rem; /* 112px */
+    --sob-space-14: 8rem; /* 128px */
+
+    /* Grayscale Palette */
+    --sob-gray-white: #ffffff;
+    --sob-gray-50: #f8fafd;
+    --sob-gray-100: #eef2f7;
+    --sob-gray-200: #dae0e7;
+    --sob-gray-300: #c4cdd6;
+    --sob-gray-400: #afbbc7;
+    --sob-gray-500: #9aaab9;
+    --sob-gray-600: #8597aa;
+    --sob-gray-700: #61788e;
+    --sob-gray-800: #475f77;
+    --sob-gray-900: #2b4660;
+    --sob-gray-950: #0b1f32;
+
+    --sob-info-50: #f1f7fe;
+    --sob-info-100: #e2effc;
+    --sob-info-400: #55aced;
+    --sob-info-500: #1d88da;
+    --sob-info-600: #0f6bba;
+    --sob-info-700: #0f497d;
+    --sob-info-800: #123e68;
+    --sob-info-900: #0c2745;
+
+    --sob-success-50: #f4fef4;
+    --sob-success-100: #d9fcdf;
+    --sob-success-400: #95f5b9;
+    --sob-success-500: #3de994;
+    --sob-success-600: #1bd176;
+    --sob-success-700: #0ea45f;
+    --sob-success-800: #08733f;
+    --sob-success-900: #014421;
+
+    --sob-warning-50: #fff6f2;
+    --sob-warning-100: #ffefe7;
+    --sob-warning-400: #fed1c3;
+    --sob-warning-500: #f78e69;
+    --sob-warning-600: #f2662f;
+    --sob-warning-700: #b74b1f;
+    --sob-warning-800: #7c3111;
+    --sob-warning-900: #3e1603;
+
+    --sob-error-50: #fff2f3;
+    --sob-error-100: #ffe7e9;
+    --sob-error-400: #ffc4c8;
+    --sob-error-500: #f17e85;
+    --sob-error-600: #e2515a;
+    --sob-error-700: #c5353e;
+    --sob-error-800: #961b24;
+    --sob-error-900: #69030a;
+
+    --sob-border-radius-circle: 1.875rem; /* 30px */
+    --sob-border-radius-05: 0.125rem; /* 2px */
+    --sob-border-radius-1: 0.25rem; /* 4px */
+    --sob-border-radius-2: 0.5rem; /* 8px */
+    --sob-border-radius-3: 0.5625rem; /* 9px */
+    --sob-border-radius-4: 0.75rem; /* 12px */
+    --sob-border-radius-5: 1rem; /* 16px */
+
+    --sob-border-width-1: 0.0625rem; /* 1px */
+    --sob-border-width-2: 0.0938rem; /* 1.5px */
+    --sob-border-width-3: 0.1875rem; /* 3px */
+    //BG
+    --sob-color-background-primary-default: var(--sob-gray-white);
+    --sob-color-background-primary-hover: var(--sob-gray-50);
+    --sob-color-background-primary-active: var(--sob-gray-100);
+    --sob-color-background-primary-disabled: var(--sob-gray-200);
+    --sob-color-background-primary-inverse: var(--sob-gray-950);
+
+    --sob-color-background-info-default: var(--sob-info-500);
+    --sob-color-background-info-light: var(--sob-info-100);
+    --sob-color-background-success-default: var(--sob-success-700);
+    --sob-color-background-success-light: var(--sob-success-100);
+
+    --sob-color-background-warning-default: var(--sob-warning-700);
+    --sob-color-background-warning-light: var(--sob-warning-100);
+
+    --sob-color-background-danger-default: var(--sob-danger-600);
+    --sob-color-background-danger-light: var(--sob-danger-100);
+
+    --sob-color-background-neutral-default: var(--sob-neutral-900);
+    --sob-color-background-neutral-light: var(--sob-neutral-100);
+
+    //Border
+    --sob-color-border-primary-default: var(--sob-gray-200);
+    --sob-color-border-primary-active: var(--sob-gray-300);
+    --sob-color-border-primary-inverse: var(--sob-gray-700);
+    //Text
+    --sob-color-text-default: var(--sob-font-color-default);
+    --sob-color-text-primary: var(--sob-gray-950);
+    --sob-color-text-secondary: var(--sob-gray-900);
+    --sob-color-text-tertiary: var(--sob-gray-800);
+    --sob-color-text-primary-inverse: var(--sob-gray-white);
+    --sob-color-text-secondary-inverse: var(--sob-gray-100);
+    --sob-color-text-tertiary-inverse: var(--sob-gray-300);
+    --sob-color-text-info: var(--sob-info-500);
+    --sob-color-text-success: var(--sob-success-800);
+    --sob-color-text-warning: var(--sob-warning-700);
+    --sob-color-text-danger: var(--sob-danger-800);
+    --sob-color-text-link: var(--sob-info-500);
+    --sob-color-text-link-disabled: var(--sob-gray-400);
+
+    //Icons
+    --sob-color-icon-primary: var(--sob-gray-950);
+    --sob-color-icon-secondary: var(--sob-gray-900);
+    --sob-color-icon-tertiary: var(--sob-gray-700);
+    --sob-color-icon-quaternary: var(--sob-gray-600);
+
+    --sob-color-icon-primary-inverse: var(--sob-gray-white);
+    --sob-color-icon-secondary-inverse: var(--sob-gray-100);
+    --sob-color-icon-tertiary-inverse: var(--sob-gray-300);
+    --sob-color-icon-quaternary-inverse: var(--sob-gray-400);
+
+    --sob-color-icon-info: var(--sob-info-500);
+    --sob-color-icon-success: var(--sob-success-700);
+    --sob-color-icon-warning: var(--sob-warning-700);
+    --sob-color-icon-danger: var(--sob-danger-700);
+
+    // surface
+    --sob-color-surface-primary: var(--sob-gray-50);
+    --sob-color-surface-secondary: var(--sob-gray-100);
+    --sob-color-surface-tertiary: var(--sob-gray-200);
+
+    --sob-size-sm: 1.875rem;
+    --sob-size-md: 2.5rem;
+}

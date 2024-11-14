@@ -1,0 +1,189 @@
+.sob-v2-supportbtn-container {
+    display: flex;
+    align-items: center;
+    padding-right: var(--sob-v2-space-4, 1rem);
+    position: relative;
+    width: fit-content;
+
+    .sob-v2-supportbtn-header {
+        display: flex;
+        align-items: center;
+        gap: var(--sob-v2-space-3, 0.625rem);
+        justify-content: space-between;
+    }
+
+    .sob-v2-supportbtn-header-info {
+        display: flex;
+        align-items: center;
+        gap: var(--sob-v2-space-3, 0.625rem);
+    }
+
+    .sob-v2-supportbtn-iconcontainer {
+        background-color: var(--sob-supportbtn-bg-color, #e1f0f3);
+
+        svg {
+            color: var(--sob-supportbtn-icon-color, #02829f);
+        }
+
+        &:hover {
+            background-color: var(--sob-supportbtn-bg-hover-color, #cce7ec);
+        }
+    }
+
+    .sob-v2-supportbtn-text {
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+
+        span:first-child {
+            font-size: var(--sob-v2-font-size-2);
+            font-weight: var(--sob-v2-font-weight-regular);
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        span:last-child {
+            font-size: var(--sob-v2-font-size-4);
+            font-weight: var(--sob-v2-font-weight-meduim);
+        }
+    }
+
+    .sob-v2-supportbtn-more,
+    .sob-v2-supportbtncopy-iconcontainer {
+        background-color: var(--sob-gray-300);
+        margin-left: var(--sob-v2-space-3, 0.625rem);
+
+        svg {
+            color: var(--sob-gray-900);
+        }
+
+        &:hover {
+            background-color: var(--sob-gray-200);
+            svg {
+                color: var(--sob-gray-600);
+            }
+        }
+
+        .sob-v2-tooltip.copy__tooltip {
+            background-color: #1bbaac;
+        }
+    }
+
+    .sob-v2-supportbtn-more {
+        background-color: var(--sob-supportbtn-more-bg, #e1f0f3);
+    }
+
+    .sob-v2-supportbtn__tooltip {
+        z-index: var(--sob-v2-zIndex-modals);
+        position: absolute;
+        top: 3.4375rem;
+        background: var(--sob-v2-tooltip-bg, #fff);
+        right: 0rem;
+        width: fit-content;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0rem;
+            right: 1.7rem;
+            width: 0.9375rem;
+            height: 0.9375rem;
+            background-color: var(--sob-v2-tooltip-bg, #fff);
+            box-shadow: var(--sob-v2-shadow-md);
+            transform: translate(50%, -50%) rotate(-45deg);
+            clip-path: polygon(
+                -1.25rem -1.25rem,
+                calc(100% + 1.25rem) -1.25rem,
+                calc(100% + 1.25rem) calc(100% + 1.25rem)
+            );
+        }
+
+        .sob-v2-supportbtn-header-supplierref {
+            margin-bottom: var(--sob-v2-space-5, 1rem);
+
+            .sob-v2-supportbtn-iconcontainer {
+                background-color: var(--sob-supportbtn-supplierref-bg, #d8e8eb);
+
+                &:hover {
+                    background-color: var(--sob-supportbtn-supplierref-hover-bg, #c3dbe0);
+                }
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
+
+        .sob-v2-supportbtn-header-clientref {
+            margin-bottom: var(--sob-v2-space-5, 1rem);
+
+            .sob-v2-supportbtn-iconcontainer {
+                background-color: var(--sob-supportbtn-clientref-bg, #ffd8cc);
+
+                &:hover {
+                    background-color: var(--sob-supportbtn-clientref-hover-bg, #ffc3b0);
+                }
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
+
+        .sob-v2-supportbtn-header-email {
+            margin-bottom: var(--sob-v2-space-5, 1rem);
+
+            .sob-v2-supportbtn-iconcontainer {
+                background-color: var(--sob-supportbtn-email-bg, #f4e6ff);
+
+                &:hover {
+                    background-color: var(--sob-supportbtn-email-hover-bg, #e6d6ff);
+                }
+
+                svg {
+                    color: var(--sob-email-icon-color, #7e57c2);
+                }
+            }
+        }
+
+        .sob-v2-supportbtn-worhours {
+            display: flex;
+            align-items: center;
+            gap: var(--sob-v2-space-2, 0.5rem);
+            margin-bottom: var(--sob-v2-space-5, 1rem);
+
+            .sob-v2-supportbtn-icon-container {
+                width: 1.5625rem;
+                min-width: 1.5625rem;
+                height: 1.5625rem;
+                background-color: var(--sob-gray-200);
+
+                &:hover {
+                    background-color: var(--sob-gray-200-hover);
+                }
+            }
+
+            .sob-v2-supportbtn-icon-title {
+                font-weight: var(--sob-v2-font-weight-meduim);
+                font-size: var(--sob-v2-font-size-4);
+            }
+        }
+
+        .sob-v2-supportbtn-worhours-time {
+            margin-bottom: var(--sob-v2-space-5, 1rem);
+            line-height: 1.1;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            span {
+                font-weight: var(--sob-v2-font-weight-regular);
+                font-size: var(--sob-v2-font-size-2);
+            }
+        }
+    }
+}
+
+.copy__tooltip__copied .react-tooltip {
+    background-color: #1bbaac;
+}

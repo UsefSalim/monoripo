@@ -1,0 +1,24 @@
+.sob-v2-icon-btn {
+    padding: 0;
+    width: var(--sob-space-8, 2.5rem);
+    min-width: var(--sob-space-8, 2.5rem);
+    height: var(--sob-space-8, 2.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-sm {
+        width: var(--sob-size-sm);
+        min-width: var(--sob-size-sm);
+        height: var(--sob-size-sm);
+
+        .btn-loader span {
+            margin-right: 0.2081rem;
+            width: 0.3125rem;
+            height: 0.3125rem;
+        }
+    }
+
+    .btn-loader span {
+        margin-right: var(--sob-space-1);
+    }
+}

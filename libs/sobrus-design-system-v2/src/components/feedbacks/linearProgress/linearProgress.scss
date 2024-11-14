@@ -1,0 +1,38 @@
+.sob-linear-progress {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    margin: var(--sob-space-0) var(--sob-space-025);
+}
+
+.sob-linear-progress-bar {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.sob-linear-progress.determinate .sob-linear-progress-bar {
+    transition: width 0.3s linear;
+}
+
+.sob-linear-progress.indeterminate .sob-linear-progress-bar {
+    position: absolute;
+    width: 100%;
+    animation: sob-linear-indeterminate 1.5s infinite linear;
+}
+
+.sob-linear-progress-bar.no-animation {
+    animation: none !important;
+}
+
+@keyframes sob-linear-indeterminate {
+    0% {
+        left: -100%;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,46 @@
+.sob-v2-doctor-card {
+    display: flex;
+
+    .sob-v2-card-content {
+        display: flex;
+        gap: var(--sob-v2-space-4);
+        align-items: center;
+        margin-top: var(--sob-v2-space-0);
+    }
+
+    .sob-v2-doctor-card-avatar-container {
+        width: var(--sob-v2-space-11);
+        height: var(--sob-v2-space-11);
+        border-radius: var(--sob-v2-border-radius-5);
+        display: inline-block;
+    }
+
+    .sob-v2-doctor-card-avatar-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .sob-v2-doctor-card-name {
+        font-size: var(--sob-v2-font-size-5);
+        color: #030303;
+        font-weight: var(--sob-v2-font-weight-bold);
+        line-height: var(--sob-v2-font-line-height-1);
+        margin: var(--sob-v2-space-0);
+    }
+
+    .sob-v2-doctor-card-specialty {
+        font-size: var(--sob-v2-font-size-3);
+        line-height: var(--sob-v2-font-line-height-1);
+    }
+
+    .sob-v2-doctor-card-action {
+        margin-left: auto;
+    }
+
+    .sob-v2-doctor-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}

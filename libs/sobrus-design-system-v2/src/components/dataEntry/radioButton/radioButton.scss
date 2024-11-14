@@ -1,0 +1,64 @@
+.sob-v2-radioBtn-container {
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+
+    & + .sob-v2-radioBtn-container {
+        margin-top: 0.75rem;
+    }
+
+    input {
+        display: none;
+
+        & + span {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 1.25rem;
+            position: relative;
+            width: fit-content;
+            padding-left: 1.625rem;
+            font-size: var(--sob-font-size-4);
+            font-weight: var(--sob-font-weight-regular);
+            color: var(--sob-gray-900);
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0rem;
+                left: 0rem;
+                bottom: 0;
+                margin: auto;
+                border-radius: 50%;
+                width: 1.125rem;
+                height: 1.125rem;
+                border: var(--sob-border-width-1) solid var(--sob-color-palette-primary);
+                background: #fff;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                width: 0.75rem;
+                height: 0.75rem;
+                background-color: var(--sob-color-palette-primary);
+                position: absolute;
+                border-radius: 50%;
+                top: 0rem;
+                left: 0.1875rem;
+                bottom: 0;
+                margin: auto;
+                opacity: 0;
+                transform: scale(0, 0);
+                transition: all 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+            }
+        }
+
+        &:checked + span:after {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+}

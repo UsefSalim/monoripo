@@ -1,0 +1,129 @@
+.sob-v2-sideModal {
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: var(--sob-border-radius-3);
+    background-color: #f4e8e8;
+    line-height: 0;
+    cursor: pointer;
+
+    img {
+        width: 1.6538rem;
+        height: 1.4875rem;
+    }
+
+    &-popupContainer {
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0 !important;
+        z-index: var(--sob-zIndex-modals);
+        background-color: rgba(0, 0, 0, 0.31);
+        overflow: hidden;
+    }
+
+    &-popup {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 0;
+        bottom: 0;
+        z-index: var(--sob-zIndex-1);
+        background-color: #fff;
+        overflow: hidden;
+        animation: srew 0.3s;
+
+        @keyframes srew {
+            from {
+                right: -32.5rem;
+            }
+            to {
+                right: 0;
+            }
+        }
+    }
+
+    &-popup-md {
+        width: 25.3125rem;
+        max-width: 90vw;
+
+        @keyframes srew {
+            from {
+                right: -25.3125rem;
+            }
+        }
+    }
+
+    &-popup-lg {
+        width: 32.5rem;
+        max-width: 90vw;
+
+        @keyframes srew {
+            from {
+                right: -32.5rem;
+            }
+        }
+    }
+}
+
+.sob-v2-sideModalBody {
+    padding: var(--sob-space-3) var(--sob-space-4);
+    overflow-y: auto;
+    max-height: 70%;
+
+    &::-webkit-scrollbar {
+        width: 0.5rem !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--sob-color-palette-primary);
+        border-top: 1.25rem transparent solid;
+        border-bottom: 0.625rem transparent solid;
+        border-right: 0.25rem transparent solid;
+        background-clip: padding-box;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: var(--sob-color-palette-primary);
+        border-top: 1.25rem transparent solid;
+        border-bottom: 0.625rem transparent solid;
+        border-right: 0.25rem transparent solid;
+        background-clip: padding-box;
+    }
+}
+
+.sob-v2-sideModalHeader {
+    padding: var(--sob-space-3) var(--sob-space-4);
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--aquamarine-light);
+    gap: var(--sob-space-4);
+
+    &-text {
+        font-size: var(--sob-font-size-6);
+        font-weight: var(--sob-font-weight-medium);
+    }
+
+    .sob-v2-sideModalHeader-close {
+        margin-left: auto;
+        background-color: var(--sob-gray-200);
+
+        &:hover {
+            background-color: var(--sob-gray-50);
+        }
+
+        svg {
+            color: var(--sob-gray-600);
+        }
+    }
+
+    img {
+        max-width: 50%;
+    }
+}

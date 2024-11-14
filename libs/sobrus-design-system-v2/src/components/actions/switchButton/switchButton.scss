@@ -1,0 +1,51 @@
+.sob-v2-switch-button {
+    display: inline-block;
+    position: relative;
+}
+
+.sob-v2-switch-checkbox {
+    display: none;
+}
+
+.sob-v2-switch-slider {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+    position: relative;
+    box-shadow: var(--sob-shadow-sm);
+}
+
+.sob-v2-switch-slider-container {
+    display: flex;
+    gap: var(--sob-space-2); /* 8px */
+    align-items: center;
+}
+
+.sob-v2-switch-label {
+    color: var(--sob-gray-950); /* Assuming Grayscale-Gray-950-text-primary translates to gray-950 */
+    font-size: var(--sob-font-size-4); /* 14px */
+    font-style: normal;
+    font-weight: var(--sob-font-weight-medium);
+    line-height: var(--sob-font-line-height-3); /* 1.3125rem or 1.5rem (adjusted to closest value) */
+}
+
+.sob-v2-switch-handle {
+    position: absolute;
+    top: var(--sob-space-05); /* 2px */
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sob-v2-switch-button.disabled .sob-v2-switch-slider {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.sob-v2-switch-button.disabled .sob-v2-switch-label {
+    opacity: 0.5;
+}

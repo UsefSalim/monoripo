@@ -1,0 +1,14 @@
+{
+    "editor.formatOnSave": true,
+    "[javascript]": { "editor.formatOnSave": false },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "eslint.alwaysShowStatus": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "files.autoSave": "onFocusChange",
+    // "[dotenv]": {
+    //   "editor.defaultFormatter": "foxundermoon.shell-format"
+    // }
+    //   "prettier.disableLanguages": ["js"]
+}

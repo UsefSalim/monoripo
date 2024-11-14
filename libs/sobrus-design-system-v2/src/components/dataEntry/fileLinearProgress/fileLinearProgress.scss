@@ -1,0 +1,205 @@
+.sob-v2-fileLineProgress__container {
+    width: 100%;
+    display: flex;
+}
+.sob-v2-fileLinearProgress__previeHover {
+    &:hover {
+        .sob-v2-file__Previewimg__hover {
+            display: flex !important;
+        }
+    }
+}
+.sob-v2-fileInput__disable {
+    display: none !important;
+}
+.sob-v2-fileLinearProgress {
+    display: flex;
+    align-items: center;
+    padding: var(--sob-space-3);
+    border-radius: var(--sob-border-radius-2);
+    margin-top: var(--sob-space-5);
+    justify-content: space-between;
+    border: var(--sob-border-width-1) solid var(--sob-gray-300);
+}
+.sob-v2-fileLinearProgress-mt {
+    margin-top: var(--sob-space-0);
+}
+.sob-v2-fileLinearProgress__Container {
+    display: flex;
+    flex: 1;
+}
+.sob-v2-linearProgress_imagedelete {
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    background-color: rgba(240, 90, 41, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CircularProgressbar .CircularProgressbar-text {
+    fill: #02829f !important;
+    font-weight: var(--sob-font-weight-bold) !important;
+}
+.CircularProgressbar .CircularProgressbar-path {
+    stroke: #02829f !important;
+}
+.CircularProgressbar .CircularProgressbar-trail {
+    stroke: #cbe5eb !important;
+}
+.sob-v2-linearProgress__progress {
+    width: 2.125rem;
+    height: 2.125rem;
+}
+.sob-v2-fileLinearProgress:hover {
+    background-color: #f7f7f7;
+    border-radius: var(--sob-border-radius-3);
+    cursor: pointer;
+}
+.sob-v2-fileLinearProgress__imageContainer {
+    position: relative;
+    width: 1.9863rem;
+    height: 2.2731rem;
+    .sob-v2-file__img {
+        width: 1.9863rem;
+        height: 2.2731rem;
+    }
+}
+.sob-v2-fileLinearProgress__imagePrevewContainer {
+    position: relative;
+    width: 2.875rem;
+    height: 2.875rem;
+    border-radius: var(--sob-border-radius-2);
+    object-fit: cover;
+
+    .sob-v2-file__Previewimg {
+        border-radius: var(--sob-border-radius-2);
+        width: 2.875rem;
+        height: 2.875rem;
+        object-fit: cover;
+    }
+    .sob-v2-file__Previewimg__hover {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.sob-v2-fileLinearProgress__image__extention {
+    position: absolute;
+    top: 1.1375rem;
+    font-size: 0.5rem;
+    color: #fff;
+    left: 0.25rem;
+    margin: var(--sob-space-0);
+}
+.sob-v2-fileLinearProgress .custom-linear-progress-valid {
+    height: 0.4375rem !important;
+    border-radius: var(--sob-border-radius-1) !important;
+    background-color: #ecf9f8 !important;
+}
+.sob-v2-fileLinearProgress .custom-linear-progress-invalid {
+    height: 0.4375rem !important;
+    border-radius: var(--sob-border-radius-1) !important;
+    background-color: rgba(249, 170, 0, 0.08) !important;
+}
+.sob-v2-fileLinearProgress .sob-v2-linearProgress-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: var(--sob-space-3);
+    justify-content: center;
+    max-width: 18.75rem;
+}
+.sob-v2-fileLinearProgress .sob-v2-linearProgress-container .text-container {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    // flex: 1;
+    margin-bottom: 0.625rem;
+    line-height: 0;
+}
+.sob-v2-fileLinearProgress .sob-v2-linearProgress-container .file-size {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: var(--sob-font-weight-regular);
+    font-size: var(--sob-font-size-1);
+    color: var(--sob-gray-500);
+    margin: var(--sob-space-0);
+}
+.sob-v2-fileLinearProgress .sob-v2-linearProgress-container .file-error {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: var(--sob-font-weight-regular);
+    font-size: var(--sob-font-size-1);
+    color: var(--sob-error-600);
+    margin: var(--sob-space-0);
+}
+.sob-v2-fileLinearProgress .sob-v2-linearProgress-container .file-name {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: var(--sob-font-weight-regular);
+    font-size: var(--sob-font-size-3);
+    color: var(--sob-gray-900);
+    margin: var(--sob-space-0);
+}
+.sob-v2-fileLinearProgress .sob-v2-linearProgress-container .text-container .file-percent {
+    font-size: var(--sob-font-size-3);
+    font-weight: var(--sob-font-weight-meduim);
+    color: #b1b1b1;
+}
+.sob-v2-fileLinearProgress .custom-linear-progress-valid .MuiLinearProgress-bar {
+    background-color: #1bbaac !important;
+    border-radius: var(--sob-border-radius-1) !important;
+}
+.sob-v2-fileLinearProgress .custom-linear-progress-invalid .MuiLinearProgress-bar {
+    background-color: #eaa207 !important;
+    border-radius: var(--sob-border-radius-1) !important;
+}
+.sob-v2-fileLinearProgress .circle-status-valid {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #4ad295;
+    position: relative;
+}
+.sob-v2-fileLinearProgress .circle-status-invalid {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #eaa207;
+    position: relative;
+}
+.sob-v2-fileLinearProgress .icon-status {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagepreview__container {
+    max-height: 80%;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // box-shadow: 0 .1875rem .8125rem 0 rgba(0, 0, 0, 0.08);
+    span {
+        height: 80%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.sob-v2-linearProgress-actions__container {
+    display: flex;
+    align-items: center;
+    .sob-v2-btn {
+        margin-left: var(--sob-space-2);
+    }
+}

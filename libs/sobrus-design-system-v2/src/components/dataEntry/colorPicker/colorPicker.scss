@@ -1,0 +1,23 @@
+.sob-v2-color-picker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sob-v2-color-picker {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-width: 0;
+    padding: 0;
+    border-radius: var(--sob-border-radius-2);
+    overflow: hidden;
+    padding: var(--sob-space-1);
+    border: solid var(--sob-border-width-1) #c6c6c6;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.sob-v2-color-picker-sm {
+    width: 1.875rem;
+    height: 1.875rem;
+}

@@ -1,0 +1,58 @@
+.dashed-btn {
+    display: inline-block;
+    font-weight: var(--sob-font-weight-regular);
+    font-size: var(--sob-font-size-4);
+    line-height: var(--sob-font-line-height-3);
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: var(--sob-border-width-1) solid transparent;
+    padding: 0.75rem 1.8rem;
+    border-radius: var(--sob-border-radius-4);
+    transition:
+        color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+
+    height: fit-content;
+
+    border: var(--sob-border-width-2) dashed var(--sob-color-palette-primary);
+    border-radius: var(--sob-border-radius-2);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00b1d8;
+    cursor: pointer;
+    padding: 1.5rem 1rem;
+    white-space: break-spaces;
+
+    &[disabled] {
+        background-color: transparent !important;
+        cursor: not-allowed;
+        pointer-events: none;
+        color: var(--sob-gray-500);
+        border: var(--sob-border-width-2) dashed var(--sob-gray-500);
+
+        svg {
+            color: var(--sob-gray-500) !important;
+        }
+    }
+}
+
+.dashed-btn:hover {
+    color: #00b1d8;
+}
+
+.dashed-btn-square {
+    padding: 6.25rem;
+    width: fit-content;
+    flex-direction: column;
+}

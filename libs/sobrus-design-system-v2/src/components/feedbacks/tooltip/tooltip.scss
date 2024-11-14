@@ -1,0 +1,17 @@
+.react-tooltip {
+    background-color: #1a2734 !important;
+    border-radius: var(--sob-border-radius-3) !important;
+    box-shadow: 0 0.1875rem 0.6875rem 0 rgba(0, 0, 0, 0.16) !important;
+    padding: var(--sob-space-3) !important;
+
+    p {
+        margin: var(--sob-space-0) !important;
+        font-size: var(--sob-font-size-2) !important;
+        color: #fff !important;
+    }
+}
+
+.sob-v2-tooltipMenu__menu {
+    background-color: #fff !important;
+    padding: 0.5rem 0.75rem !important;
+}

@@ -1,0 +1,24 @@
+.sob-v2-table-body-actions {
+    display: flex;
+    margin: -0.325rem;
+    justify-content: flex-end;
+    svg {
+        font-size: var(--sob-font-size-7);
+    }
+}
+.sob-v2-table-body-actions button {
+    margin: 0.325rem;
+}
+.sob-v2-table-container {
+    .table__container {
+        -webkit-overflow-scrolling: touch;
+        display: block;
+        overflow: visible;
+        overflow-x: auto;
+        overflow-y: clip;
+        width: 100%;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

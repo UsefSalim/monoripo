@@ -1,0 +1,149 @@
+.sob-v2-checkbox-wrapper {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--sob-space-2);
+
+    .sob-v2-checkbox-text-container {
+        .sob-v2-checkbox-text {
+            font-size: var(--sob-font-size-4);
+            white-space: nowrap;
+        }
+
+        .sob-v2-checkbox-helperText {
+            font-size: var(--sob-font-size-3);
+            opacity: 0.5;
+        }
+    }
+
+    &-labelfirst {
+        flex-direction: row-reverse;
+    }
+}
+
+.sob-v2-checkbox-container {
+    --background: #fff;
+    --border: #d1d6ee;
+    --border-hover: #bbc1e1;
+    --border-active: var(--sob-color-palette-primary);
+    --tick: #fff;
+    position: relative;
+}
+
+.sob-v2-checkbox-container .sob-v2-checkbox,
+.sob-v2-checkbox-container svg {
+    width: 1.3125rem;
+    height: 1.3125rem;
+    display: block;
+}
+
+.sob-v2-checkbox-container .sob-v2-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    outline: none;
+    background: var(--background);
+    border: none;
+    margin: var(--sob-space-0);
+    padding: var(--sob-space-0);
+    cursor: pointer;
+    border-radius: var(--sob-border-radius-1);
+    transition: box-shadow 0.3s;
+    box-shadow: inset 0 0 0 var(--s, 0.0625rem) var(--b, var(--border));
+}
+
+.sob-v2-checkbox-container .sob-v2-checkbox:hover {
+    --s: 0.125rem;
+    --b: var(--border-hover);
+}
+
+.sob-v2-checkbox-container .sob-v2-checkbox:checked {
+    --b: var(--border-active);
+}
+
+.sob-v2-checkbox-container svg {
+    pointer-events: none;
+    fill: none;
+    stroke-width: 0.125rem;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--stroke, var(--border-active));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.3125rem;
+    height: 1.3125rem;
+    transform: scale(var(--scale, 1)) translateZ(0);
+}
+
+.sob-v2-checkbox-container.path .sob-v2-checkbox:checked {
+    --s: 0.125rem;
+    transition-delay: 0.4s;
+}
+
+.sob-v2-checkbox-container.path .sob-v2-checkbox:checked + svg {
+    --a: 16.1 86.12;
+    --o: 102.22;
+}
+
+.sob-v2-checkbox-container.path svg {
+    stroke-dasharray: var(--a, 86.12);
+    stroke-dashoffset: var(--o, 86.12);
+    transition:
+        stroke-dasharray 0.6s,
+        stroke-dashoffset 0.6s;
+}
+
+.sob-v2-checkbox-container.bounce {
+    --stroke: var(--tick);
+}
+
+.sob-v2-checkbox-container.bounce .sob-v2-checkbox:checked {
+    --s: 0.6875rem;
+}
+
+.sob-v2-checkbox-container.bounce .sob-v2-checkbox:checked + svg {
+    -webkit-animation: bounce 0.4s linear forwards 0.2s;
+    animation: bounce 0.4s linear forwards 0.2s;
+}
+
+.sob-v2-checkbox-container.bounce svg {
+    --scale: 0;
+}
+
+.sob-v2-checkbox:focus {
+    outline: 0.0938rem solid #458fff;
+}
+
+.sob-v2-checkbox:disabled {
+    background: #b1b1b1;
+    --border-active: #b1b1b1;
+}
+
+.sob-v2-checkbox-text-container-disabled {
+    color: #b1b1b1;
+}
+
+@-webkit-keyframes bounce {
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
