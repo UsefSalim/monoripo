@@ -118,7 +118,9 @@ export const CreatableSelect: FC<InputCreatAsyncSelectProps> = ({
 
     useEffect(() => {
         // get color variable form css
-        const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--sob-color-palette-primary');
+        const primaryColor = getComputedStyle(document.documentElement).getPropertyValue(
+            '--sob-color-background-default',
+        );
         if (primaryColor) setprimaryColor(primaryColor);
 
         const primaryTextColor = getComputedStyle(document.documentElement).getPropertyValue('--gray-900');

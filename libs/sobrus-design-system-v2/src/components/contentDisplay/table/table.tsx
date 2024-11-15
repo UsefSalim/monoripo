@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 
 import classNames from 'classnames';
 import { Size, TableGlobalProps } from '@/components/types';
-
+import './table.scss';
 /**
  *
  *

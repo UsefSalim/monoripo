@@ -1,16 +1,16 @@
 .sob-v2-vtab-container {
     display: flex;
     align-items: flex-start;
-    margin-left: var(--sob-v2-space-4, -1.5rem);
+    margin-left: var(--sob-space-4, -1.5rem);
     position: relative;
 }
 
 .sob-v2-vtab-container .sob-v2-vtabs {
-    margin: 0 var(--sob-v2-space-1, 0.5rem) 0 0;
+    margin: 0 var(--sob-space-1, 0.5rem) 0 0;
 }
 
 .sob-v2-vtab-container .sob-v2-vtab-content {
-    margin: 0 0 0 var(--sob-v2-space-1, 0.5rem);
+    margin: 0 0 0 var(--sob-space-1, 0.5rem);
 }
 
 .sob-v2-vtabs {
@@ -20,66 +20,66 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    box-shadow: 0 0 0.3125rem var(--sob-v2-shadow-color, #8080801c);
+    box-shadow: 0 0 0.3125rem var(--sob-shadow-color, #8080801c);
     align-self: stretch;
-    background-color: var(--sob-v2-background-color, #fff);
+    background-color: var(--sob-background-color, #fff);
     min-height: 90vh;
     width: 16.25rem;
-    padding: var(--sob-v2-space-4, 1rem) 0;
+    padding: var(--sob-space-4, 1rem) 0;
 
     .sob-v2-table-tag {
         min-width: fit-content;
-        margin-left: var(--sob-v2-space-025, 0.25rem);
+        margin-left: var(--sob-space-025, 0.25rem);
     }
 
     &-radius {
-        border-radius: 0 var(--sob-v2-border-radius-3, 0.5625rem) var(--sob-v2-border-radius-3, 0.5625rem) 0;
+        border-radius: 0 var(--sob-border-radius-3, 0.5625rem) var(--sob-border-radius-3, 0.5625rem) 0;
     }
 }
 
 .sob-v2-vtab-item {
-    padding: var(--sob-v2-space-1, 0.375rem) var(--sob-v2-space-2, 0.625rem) var(--sob-v2-space-1, 0.375rem)
-        var(--sob-v2-space-4, 1rem);
+    padding: var(--sob-space-1, 0.375rem) var(--sob-space-2, 0.625rem) var(--sob-space-1, 0.375rem)
+        var(--sob-space-4, 1rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: var(--sob-v2-space-3, 0.75rem);
+    margin-bottom: var(--sob-space-3, 0.75rem);
     position: relative;
     border: none;
-    background-color: var(--sob-v2-background-color, #fff);
+    background-color: var(--sob-background-color, #fff);
     cursor: pointer;
 }
 
 .sob-v2-vtab-subitem {
-    padding: var(--sob-v2-space-1, 0.375rem) var(--sob-v2-space-2, 0.625rem) var(--sob-v2-space-1, 0.375rem)
-        var(--sob-v2-space-5, 1.5rem);
+    padding: var(--sob-space-1, 0.375rem) var(--sob-space-2, 0.625rem) var(--sob-space-1, 0.375rem)
+        var(--sob-space-5, 1.5rem);
     display: flex;
-    margin-bottom: var(--sob-v2-space-05, 0.1875rem);
+    margin-bottom: var(--sob-space-05, 0.1875rem);
     align-items: center;
     position: relative;
     border: none;
-    background-color: var(--sob-v2-background-color, #fff);
+    background-color: var(--sob-background-color, #fff);
     cursor: pointer;
 }
 
 .sob-v2-vtab-item-title,
 .sob-v2-vtab-subitem-title {
-    font-weight: var(--sob-v2-font-weight-regular);
-    font-size: var(--sob-v2-font-size-4);
+    font-weight: var(--sob-font-weight-regular);
+    font-size: var(--sob-font-size-4);
     color: var(--sob-gray-900, #1b2734);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 12.5rem;
     &:hover {
-        color: var(--sob-v2-color-palette-primary);
+        color: var(--sob-font-color-default);
     }
 }
 
 .sob-v2-vtab-item-title.active,
 .sob-v2-vtab-subitem.active-sub-item .sob-v2-vtab-subitem-title {
-    font-weight: var(--sob-v2-font-weight-semibold);
-    color: var(--sob-v2-color-palette-primary);
+    font-weight: var(--sob-font-weight-semibold);
+    color: var(--sob-font-color-default);
     transition: all 0.4s ease;
 }
 
@@ -90,7 +90,7 @@
 .sob-v2-vtab-items-container-open {
     display: block;
     height: auto;
-    padding: var(--sob-v2-space-3, 0.75rem) 0;
+    padding: var(--sob-space-3, 0.75rem) 0;
     margin: 0;
 }
 
@@ -102,28 +102,28 @@
 }
 
 .sob-v2-vtab-item-image {
-    width: var(--sob-v2-icon-size, 1.25rem);
-    height: var(--sob-v2-icon-size, 1.25rem);
+    width: var(--sob-icon-size, 1.25rem);
+    height: var(--sob-icon-size, 1.25rem);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: var(--sob-v2-space-1, 0.5rem);
+    margin-right: var(--sob-space-1, 0.5rem);
 
     svg {
-        color: var(--sob-v2-icon-color, #000);
+        color: var(--sob-icon-color, #000);
     }
 }
 
 .sob-v2-vtab-item-active-bar {
     width: 0;
-    background: var(--sob-v2-background-color, #fff);
-    border-radius: 0 var(--sob-v2-border-radius-2, 0.5rem) var(--sob-v2-border-radius-2, 0.5rem) 0;
+    background: var(--sob-background-color, #fff);
+    border-radius: 0 var(--sob-border-radius-2, 0.5rem) var(--sob-border-radius-2, 0.5rem) 0;
     height: 100%;
     position: absolute;
     left: 0;
     &.active {
-        width: var(--sob-v2-border-width, 0.25rem);
-        background: var(--sob-v2-color-palette-primary);
+        width: var(--sob-border-width, 0.25rem);
+        background: var(--sob-font-color-default);
         transition: width 0.3s ease;
     }
 }
@@ -133,6 +133,6 @@
 }
 
 .sob-v2-vtab-submenu-icon {
-    margin: 0 var(--sob-v2-space-025, 0.25rem);
+    margin: 0 var(--sob-space-025, 0.25rem);
     display: flex;
 }

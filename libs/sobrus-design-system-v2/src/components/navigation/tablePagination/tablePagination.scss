@@ -1,19 +1,19 @@
 .sob-v2-TablePage {
     display: inline-flex;
     height: 2rem;
-    padding: 0 var(--sob-v2-space-4);
-    border-radius: var(--sob-v2-border-radius-2);
+    padding: 0 var(--sob-space-4);
+    border-radius: var(--sob-border-radius-2);
     justify-content: center;
     align-items: center;
-    font-weight: var(--sob-v2-font-weight-medium);
-    font-size: var(--sob-v2-font-size-2);
-    margin-left: var(--sob-v2-space-3);
-    margin-right: var(--sob-v2-space-3);
-    color: var(--sob-v2-color-palette-primary);
-    background-color: var(--sob-v2-color-palette-secondary);
+    font-weight: var(--sob-font-weight-medium);
+    font-size: var(--sob-font-size-2);
+    margin-left: var(--sob-space-3);
+    margin-right: var(--sob-space-3);
+    color: var(--sob-font-color-default);
+    background-color: var(--sob-color-background-inverse);
     &:hover {
-        color: var(--sob-v2-color-palette-primary);
-        background-color: var(--sob-v2-color-palette-secondary-hover);
+        color: var(--sob-font-color-default);
+        background-color: var(--sob-color-palette-secondary-hover);
     }
 }
 
@@ -31,17 +31,17 @@
     display: inline-flex;
     height: 2rem;
     width: 2rem;
-    border-radius: var(--sob-v2-border-radius-2);
+    border-radius: var(--sob-border-radius-2);
     justify-content: center;
     align-items: center;
-    background-color: var(--sob-v2-color-palette-secondary);
+    background-color: var(--sob-color-background-inverse);
     &:hover {
-        color: var(--sob-v2-color-palette-primary);
-        background-color: var(--sob-v2-color-palette-secondary-hover);
+        color: var(--sob-font-color-default);
+        background-color: var(--sob-color-palette-secondary-hover);
     }
 
     svg {
-        color: var(--sob-v2-color-palette-primary);
+        color: var(--sob-font-color-default);
     }
 }
 
@@ -52,18 +52,4 @@
         color: #b1b1b1;
     }
     cursor: not-allowed;
-}
-
-.sob-v2-TablePage__outline {
-    color: var(--sob-v2-color-palette-primary);
-    border: var(--sob-v2-border-width-1) solid var(--sob-v2-color-palette-primary);
-    background-color: #fff;
-    border-color: var(--sob-v2-color-palette-primary);
-    &:hover {
-        background-color: var(--sob-v2-color-palette-primary-hover);
-        border-color: var(--sob-v2-color-palette-primary-hover);
-        svg {
-            // color: var(--sob-v2-text-action-primary);
-        }
-    }
 }

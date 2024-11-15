@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { InputGlobalProps } from '@/components/types';
 
 import './checkbox.scss';
+import { Typography } from '@/main';
 export interface CheckboxProps extends InputGlobalProps {
     /**
      * 	The label of the component
@@ -31,31 +32,6 @@ export interface CheckboxProps extends InputGlobalProps {
     labelFirst?: boolean;
 }
 
-/**
- *
- * ###Usage
- *
- *
- * the checkbox component accepte all InputHTMLAttributes properties
- *
- * accepte ref
- *
- *```JSX
- *
- * import {CheckBox} from "@sobrus-com/sobrus-design-system"
- * const Example = (props) => {
- *    return (
-            <CheckBox
-                id="checkbox"
-                name="checkbox"
-            />
- *    );
- * }
- * ```
- *
- */
-
-// eslint-disable-next-line react/display-name
 const CheckBox = forwardRef<HTMLInputElement, CheckboxProps>(
     ({ className, label, checked, indeterminate, disabled, labelFirst, name, id, ...props }, ref) => {
         const classes = classNames(
@@ -71,7 +47,7 @@ const CheckBox = forwardRef<HTMLInputElement, CheckboxProps>(
         }, [checked]);
 
         return (
-            <label className={classes}>
+            <div className={classes}>
                 <span className={'sob-v2-checkbox-container bounce'}>
                     <input
                         {...props}
@@ -97,10 +73,12 @@ const CheckBox = forwardRef<HTMLInputElement, CheckboxProps>(
                             disabled ? 'sob-v2-checkbox-text-container-disabled' : ''
                         }`}
                     >
-                        <div className='sob-v2-checkbox-text'>{label}</div>
+                        <Typography type='label' size='sm' as='label'>
+                            {label}
+                        </Typography>
                     </div>
                 )}
-            </label>
+            </div>
         );
     },
 );

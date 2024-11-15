@@ -126,11 +126,11 @@ export default defineConfig({
             external: [...Object.keys(packageJson.peerDependencies), 'react/jsx-runtime'],
             input: Object.fromEntries(
                 glob
-                    .sync('src/components/**/*.{ts,tsx}', {
+                    .sync('src/**/*.{ts,tsx}', {
                         ignore: ['src/**/*.d.ts', 'src/**/*.stories.tsx', 'src/types.ts', 'src/index.tsx'],
                     })
                     .map((file) => [
-                        relative('src/components', file.slice(0, file.length - extname(file).length)),
+                        relative('src', file.slice(0, file.length - extname(file).length)),
                         fileURLToPath(new URL(file, import.meta.url)),
                     ]),
             ),

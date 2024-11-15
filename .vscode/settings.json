@@ -5,12 +5,7 @@
         "source.fixAll.eslint": "explicit"
     },
     "eslint.alwaysShowStatus": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#372A2E",
-        "titleBar.activeBackground": "#4D3B41",
-        "titleBar.activeForeground": "#FBFAFA"
-    }
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
     // "files.autoSave": "onFocusChange",
     // "[dotenv]": {
     //   "editor.defaultFormatter": "foxundermoon.shell-format"

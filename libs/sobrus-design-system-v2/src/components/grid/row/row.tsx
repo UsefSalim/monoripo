@@ -1,7 +1,7 @@
 import React, { ElementType, FC } from 'react';
 import classNames from 'classnames';
 import { TagGlobalProps } from '@/components/types';
-
+import './row.scss';
 const rowColWidths = ['xs', 'sm', 'md', 'lg', 'xl'];
 
 export type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;

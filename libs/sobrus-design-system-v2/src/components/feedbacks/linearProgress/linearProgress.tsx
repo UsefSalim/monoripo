@@ -28,7 +28,7 @@ const LinearProgress = ({
     variant = 'indeterminate',
     className,
     disableAnimation = false,
-    color = 'var(--sob-v2-color-palette-primary)',
+    color = 'var(--sob-font-color-default)',
     ...props
 }: SobLinearProgressProps) => {
     return (

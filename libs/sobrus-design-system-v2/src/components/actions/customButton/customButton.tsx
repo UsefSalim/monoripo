@@ -6,10 +6,10 @@ import { IconButton } from '@/actions';
 import './customButton.scss';
 
 import { ReactNode } from 'react';
-import { ButtonsGlobalProps, Size } from '@/components/types';
+import { DivGlobalProps, Size } from '@/components/types';
 import { Typography } from '@/typography';
 
-export interface CustomButtonProps extends ButtonsGlobalProps {
+export interface CustomButtonProps extends DivGlobalProps {
     /**
      * The background color of the button’s icon container.
      */
@@ -36,7 +36,7 @@ export interface CustomButtonProps extends ButtonsGlobalProps {
     actionDescripton?: ReactNode;
 }
 
-const CustomButton = forwardRef<HTMLButtonElement, CustomButtonProps>(
+const CustomButton = forwardRef<HTMLDivElement, CustomButtonProps>(
     ({ className, icon, label, size = 'md', bgColor, disabled, actionDescripton, onClick, ...props }, ref) => {
         const buttonClasses = classNames(
             'sob-v2-btn-custom',
@@ -57,18 +57,20 @@ const CustomButton = forwardRef<HTMLButtonElement, CustomButtonProps>(
         );
 
         return (
-            <button ref={ref} className={contaiinerClasses} onClick={onClick} {...props}>
+            <div ref={ref} className={contaiinerClasses} onClick={onClick} {...props}>
                 <div className={buttonClasses}>
                     <div className='sob-v2-btn-custom-body'>
                         <IconButton
+                            size={size}
                             color='initial'
                             className='sob-v2-btn-custom-icon-container'
                             style={{ backgroundColor: bgColor }}
+                            disabled={disabled}
                         >
                             {icon}
                         </IconButton>
                         <Typography
-                            size='md'
+                            size='sm'
                             type='label'
                             color={disabled ? 'link-disabled' : undefined}
                             className={textClasses}
@@ -79,11 +81,11 @@ const CustomButton = forwardRef<HTMLButtonElement, CustomButtonProps>(
                 </div>
                 <div style={{ display: 'flex', gap: '.5rem', alignItems: 'center' }}>
                     <span>{actionDescripton}</span>
-                    <IconButton disabled={disabled} color='initial' className={arrowClasses}>
+                    <IconButton disabled={disabled} size='sm' color='initial' className={arrowClasses}>
                         <AiOutlineArrowRight color='#02829F' size={size === 'sm' ? 15 : 18}></AiOutlineArrowRight>
                     </IconButton>
                 </div>
-            </button>
+            </div>
         );
     },
 );

@@ -2,7 +2,7 @@ import React, { forwardRef, ReactNode } from 'react';
 import classNames from 'classnames';
 import { DivGlobalProps, HeadingsGlobalProps } from '@/components/types';
 import { ItemLoader } from '@/contentDisplay';
-
+import './card.scss';
 export interface CardProps extends DivGlobalProps {
     /**
      * The main title of the card.

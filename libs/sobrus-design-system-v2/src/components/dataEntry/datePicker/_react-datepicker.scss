@@ -399,7 +399,7 @@
     }
     /* Handle */
     // &::-webkit-scrollbar-thumb {
-    //     background: var(--sob-color-palette-primary);
+    //     background: var(--sob-color-background-default);
     //     border-top: .625rem transparent solid;
     //     border-bottom: .625rem transparent solid;
     //     border-right: .125rem transparent solid;
@@ -408,7 +408,7 @@
 
     // /* Handle on hover */
     // &::-webkit-scrollbar-thumb:hover {
-    //     background: var(--sob-color-palette-primary) !important;
+    //     background: var(--sob-color-background-default) !important;
     //     border-top: 6.25rem transparent solid;
     //     border-bottom: .625rem transparent solid;
     //     border-right: .25rem transparent solid;
@@ -441,7 +441,7 @@
     .react-datepicker__time-box
     ul.react-datepicker__time-list
     li.react-datepicker__time-list-item--selected {
-    background-color: var(--sob-color-palette-primary);
+    background-color: var(--sob-color-background-default);
     color: white;
     font-weight: bold;
     border-radius: 0.5rem;
@@ -452,7 +452,7 @@
     .react-datepicker__time-box
     ul.react-datepicker__time-list
     li.react-datepicker__time-list-item--selected:hover {
-    background-color: var(--sob-color-palette-primary-hover);
+    background-color: var(--sob-color-background-default-hover);
     border-radius: 0.5rem;
 }
 

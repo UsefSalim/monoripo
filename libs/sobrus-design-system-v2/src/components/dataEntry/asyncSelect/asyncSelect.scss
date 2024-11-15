@@ -24,7 +24,7 @@
         }
 
         &:active {
-            border: solid var(--sob-border-width-1) var(--sob-color-palette-primary);
+            border: solid var(--sob-border-width-1) var(--sob-color-background-default);
         }
 
         &::-webkit-scrollbar {
@@ -106,10 +106,10 @@
 
 .sob-v2-select .sob-v2-select__control--is-focused {
     box-shadow: none;
-    border: solid var(--sob-border-width-1) var(--sob-color-palette-primary);
+    border: solid var(--sob-border-width-1) var(--sob-color-background-default);
 
     &:hover {
-        border: solid var(--sob-border-width-1) var(--sob-color-palette-primary);
+        border: solid var(--sob-border-width-1) var(--sob-color-background-default);
     }
 }
 
@@ -120,7 +120,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background: var(--sob-color-palette-primary);
+        background: var(--sob-color-background-default);
         border: 0.25rem transparent solid;
         height: 5rem !important;
         border-radius: 3.125rem;
@@ -155,7 +155,7 @@
 }
 
 .sob-v2-select__multi-value__remove:hover {
-    background-color: var(--sob-color-palette-secondary);
+    background-color: var(--sob-color-background-inverse);
     border-radius: var(--sob-border-radius-3);
 }
 

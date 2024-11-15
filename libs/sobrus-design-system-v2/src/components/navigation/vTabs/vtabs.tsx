@@ -4,7 +4,7 @@ import { Tooltip } from '@/feedbacks';
 import plusIcon from '@/assets/Icon.svg';
 import { DivGlobalProps } from '@/components/types';
 import classNames from 'classnames';
-
+import './vtab.scss';
 export interface VTabListProps extends DivGlobalProps {
     /**
      * The tab components to be rendered within the vertical tab list.

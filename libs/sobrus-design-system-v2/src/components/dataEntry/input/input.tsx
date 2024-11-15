@@ -37,29 +37,6 @@ export type SobTextareaProps = Omit<TextareaGlobalProps, 'size' | 'placeholder'>
 
 export type GlobalSobInputProps = (CustomInputProps & SobInputProps) | (CustomInputProps & SobTextareaProps);
 
-/**
- * Input and textarea
- *
- * ###Usage
- *
- *```JSX
- *
- * import {FormGroup , Label, Input, FormFeedback} from "@sobrus-com/sobrus-design-system"
- * const Example = (props) => {
- *    return (
- *      <>
-            <FormGroup>
-                <Label for="exampleText">Médecin traitant</Label>
-                <Input id="test" name="test" type="text" />
-                <FormFeedback invalid={true}>Sweet! that name is available</FormFeedback>
-            </FormGroup>
-        </>
- *    );
- * }
- * ```
- *
- */
-
 const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, GlobalSobInputProps>(
     (
         {

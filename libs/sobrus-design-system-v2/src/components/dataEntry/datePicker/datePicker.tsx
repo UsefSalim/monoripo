@@ -11,6 +11,8 @@ import {
 
 import { Size } from '@/components/types';
 
+import './datePicker.scss';
+
 export interface DatePickerProps extends Omit<ReactDatePickerProps, 'placeholderText'> {
     /** usually used for invalid data (show red border and message)  */
     invalid?: boolean;

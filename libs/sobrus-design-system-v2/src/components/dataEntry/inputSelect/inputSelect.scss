@@ -25,7 +25,7 @@
     min-height: 2.8125rem;
 
     &:hover {
-        border: solid var(--sob-border-width-1) var(--sob-color-palette-primary);
+        border: solid var(--sob-border-width-1) var(--sob-color-background-default);
     }
 }
 
@@ -39,7 +39,7 @@
 
 .sob-v2-input-select .sob-v2-input-select__control--is-focused {
     box-shadow: none;
-    border: solid var(--sob-border-width-1) var(--sob-color-palette-primary);
+    border: solid var(--sob-border-width-1) var(--sob-color-background-default);
 }
 
 .sob-v2-input-select .sob-v2-input-select__input > input {
@@ -60,16 +60,16 @@
 }
 
 .sob-v2-input-select .sob-v2-input-select__multi-value {
-    background-color: var(--sob-color-palette-secondary);
+    background-color: var(--sob-color-background-inverse);
     width: fit-content;
     display: flex;
-    color: var(--sob-color-palette-secondary-text-color);
+    color: var(--sob-color-background-inverse-text-color);
     align-items: center;
     border-radius: var(--sob-border-radius-3);
 }
 
 .sob-v2-input-select__multi-value__label {
-    color: var(--sob-color-palette-secondary-text-color);
+    color: var(--sob-color-background-inverse-text-color);
 }
 
 .basic-multi-select .sob-v2-input-select__multi-value__remove {
@@ -77,8 +77,8 @@
 }
 
 .sob-v2-input-select__multi-value__remove:hover {
-    color: var(--sob-color-palette-secondary-text-color);
-    background-color: var(--sob-color-palette-secondary);
+    color: var(--sob-color-background-inverse-text-color);
+    background-color: var(--sob-color-background-inverse);
     border-radius: var(--sob-border-radius-3);
 }
 
@@ -120,7 +120,7 @@
 }
 
 .sob-v2-select__option--is-focused {
-    background: var(--sob-color-palette-secondary);
+    background: var(--sob-color-background-inverse);
 }
 
 .sob-v2-select__option--is-selected {

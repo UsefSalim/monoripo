@@ -47,8 +47,8 @@
 
     .sob-v2-multistep-card-active {
         .sob-v2-multistep-number {
-            background-color: var(--sob-color-palette-primary);
-            border-color: var(--sob-color-palette-primary);
+            background-color: var(--sob-color-background-default);
+            border-color: var(--sob-color-background-default);
             color: #fff;
 
             svg {
@@ -57,7 +57,7 @@
         }
 
         .sob-v2-multistep-text {
-            color: var(--sob-color-palette-primary);
+            color: var(--sob-color-background-default);
             font-weight: var(--sob-font-weight-medium);
         }
     }
@@ -76,8 +76,8 @@
 
     &-primary {
         .sob-v2-multistep-card-active .sob-v2-multistep-number {
-            background-color: var(--sob-color-palette-primary);
-            border-color: var(--sob-color-palette-primary);
+            background-color: var(--sob-color-background-default);
+            border-color: var(--sob-color-background-default);
         }
     }
 }

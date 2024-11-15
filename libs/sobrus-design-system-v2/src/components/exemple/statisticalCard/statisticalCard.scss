@@ -3,21 +3,21 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    padding: var(--sob-v2-space-6) var(--sob-v2-space-1) var(--sob-v2-space-6) var(--sob-v2-space-4);
-    border-radius: var(--sob-v2-border-radius-4);
+    padding: var(--sob-space-6) var(--sob-space-1) var(--sob-space-6) var(--sob-space-4);
+    border-radius: var(--sob-border-radius-4);
     width: 100%;
     position: relative;
-    min-height: var(--sob-v2-space-13);
+    min-height: var(--sob-space-13);
 
     .sob-v2-StatisticalCard__number {
-        font-weight: var(--sob-v2-font-weight-medium);
+        font-weight: var(--sob-font-weight-medium);
         text-align: center;
-        font-size: var(--sob-v2-font-size-10);
+        font-size: var(--sob-font-size-10);
     }
 
     div {
         display: flex;
-        flex: var(--sob-v2-font-line-height-1);
+        flex: var(--sob-font-line-height-1);
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -31,8 +31,8 @@
     .sob-v2-StatisticalCard__desc {
         text-align: left;
         color: #000000;
-        font-size: var(--sob-v2-font-size-3);
-        z-index: var(--sob-v2-font-line-height-5);
+        font-size: var(--sob-font-size-3);
+        z-index: var(--sob-font-line-height-5);
     }
 
     .sob-v2-StatisticalCard__img {
@@ -42,12 +42,12 @@
         align-items: center;
         background-repeat: no-repeat;
         background-size: contain;
-        z-index: var(--sob-v2-font-line-height-1);
-        right: var(--sob-v2-space-4);
-        bottom: var(--sob-v2-space-4);
+        z-index: var(--sob-font-line-height-1);
+        right: var(--sob-space-4);
+        bottom: var(--sob-space-4);
 
         img {
-            max-height: var(--sob-v2-space-8);
+            max-height: var(--sob-space-8);
             width: auto;
             height: 90%;
         }

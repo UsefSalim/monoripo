@@ -34,7 +34,7 @@
                 border-radius: 50%;
                 width: 1.125rem;
                 height: 1.125rem;
-                border: var(--sob-border-width-1) solid var(--sob-color-palette-primary);
+                border: var(--sob-border-width-1) solid var(--sob-color-background-default);
                 background: #fff;
             }
 
@@ -43,7 +43,7 @@
                 display: block;
                 width: 0.75rem;
                 height: 0.75rem;
-                background-color: var(--sob-color-palette-primary);
+                background-color: var(--sob-color-background-default);
                 position: absolute;
                 border-radius: 50%;
                 top: 0rem;

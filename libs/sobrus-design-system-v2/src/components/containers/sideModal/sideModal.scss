@@ -80,7 +80,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background: var(--sob-color-palette-primary);
+        background: var(--sob-color-background-default);
         border-top: 1.25rem transparent solid;
         border-bottom: 0.625rem transparent solid;
         border-right: 0.25rem transparent solid;
@@ -88,7 +88,7 @@
     }
 
     &::-webkit-scrollbar-thumb:hover {
-        background: var(--sob-color-palette-primary);
+        background: var(--sob-color-background-default);
         border-top: 1.25rem transparent solid;
         border-bottom: 0.625rem transparent solid;
         border-right: 0.25rem transparent solid;

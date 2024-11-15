@@ -1,5 +1,3 @@
-@import './components/tableLoader/TableLoader';
-
 .sob-v2-table {
     width: 100%;
     border-collapse: collapse;
@@ -74,7 +72,7 @@
 }
 
 .sob-v2-table tbody tr:hover {
-    background-color: var(--sob-color-palette-secondary) !important;
+    background-color: var(--sob-color-background-inverse) !important;
 }
 
 .sob-v2-table tbody th {

@@ -18,7 +18,7 @@
     max-height: calc(100vh - 9.375rem);
     cursor: default;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.11);
-    border-radius: var(--sob-v2-border-radius-5);
+    border-radius: var(--sob-border-radius-5);
     line-height: 1.3;
     &:before {
         content: '';
@@ -28,7 +28,7 @@
         width: 0.9375rem;
         height: 0.9375rem;
         background-color: #fff;
-        box-shadow: var(--sob-v2-shadow-md);
+        box-shadow: var(--sob-shadow-md);
         transform: translate(50%, -50%) rotate(-45deg);
         -webkit-clip-path: polygon(
             -1.25rem -1.25rem,
@@ -42,13 +42,13 @@
 .sob-v2-megaNavBar-plus-menu__items {
     background-color: #fff;
     padding: 0.5rem;
-    box-shadow: var(--sob-v2-shadow-md);
-    border-radius: var(--sob-v2-border-radius-3);
+    box-shadow: var(--sob-shadow-md);
+    border-radius: var(--sob-border-radius-3);
     width: fit-content;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: var(--sob-v2-space-2);
+    gap: var(--sob-space-2);
     scrollbar-width: thin;
     overflow-x: auto;
     min-width: 11.25rem;
@@ -59,18 +59,18 @@
 
         li {
             margin: 0 0 0.75rem 0.75rem;
-            font-size: var(--sob-v2-font-size-2);
+            font-size: var(--sob-font-size-2);
             cursor: pointer;
             a {
                 &:hover {
-                    font-weight: var(--sob-v2-font-weight-regular);
-                    color: var(--sob-v2-color-palette-primary);
+                    font-weight: var(--sob-font-weight-regular);
+                    color: var(--sob-font-color-default);
                 }
             }
 
             & > .active {
-                font-weight: var(--sob-v2-font-weight-regular);
-                color: var(--sob-v2-color-palette-primary);
+                font-weight: var(--sob-font-weight-regular);
+                color: var(--sob-font-color-default);
             }
             &:last-child {
                 margin: 0 0 0 0.75rem;
@@ -89,23 +89,23 @@
 
     .active {
         text-decoration: none;
-        font-size: var(--sob-v2-font-size-4);
-        font-weight: var(--sob-v2-font-weight-regular);
-        color: var(--sob-v2-color-palette-primary);
+        font-size: var(--sob-font-size-4);
+        font-weight: var(--sob-font-weight-regular);
+        color: var(--sob-font-color-default);
         position: relative;
         width: -moz-fit-content;
         width: fit-content;
         cursor: pointer;
         z-index: 1;
-        background-color: var(--sob-v2-color-palette-secondary);
+        background-color: var(--sob-color-background-inverse);
         transform: scale(1.02);
     }
 
     & > a {
         text-decoration: none;
-        font-size: var(--sob-v2-font-size-4);
-        font-weight: var(--sob-v2-font-weight-regular);
-        color: var(--sob-v2-color-palette-primary);
+        font-size: var(--sob-font-size-4);
+        font-weight: var(--sob-font-weight-regular);
+        color: var(--sob-font-color-default);
         position: relative;
         width: fit-content;
         cursor: pointer;
@@ -113,10 +113,10 @@
 
         div {
             padding: 0.5rem;
-            border-radius: var(--sob-v2-border-radius-2);
+            border-radius: var(--sob-border-radius-2);
             &:hover {
-                color: var(--sob-v2-color-palette-primary);
-                background-color: var(--sob-v2-color-palette-secondary);
+                color: var(--sob-font-color-default);
+                background-color: var(--sob-color-background-inverse);
                 transform: scale(1.02);
             }
         }
@@ -131,9 +131,9 @@
     & > .active {
         div {
             padding: 0.5rem;
-            border-radius: var(--sob-v2-border-radius-2);
-            color: var(--sob-v2-color-palette-primary);
-            background-color: var(--sob-v2-color-palette-secondary);
+            border-radius: var(--sob-border-radius-2);
+            color: var(--sob-font-color-default);
+            background-color: var(--sob-color-background-inverse);
             transform: scale(1.02);
         }
     }

@@ -22,8 +22,7 @@
         box-shadow 0.15s ease-in-out;
 
     height: fit-content;
-
-    border: var(--sob-border-width-2) dashed var(--sob-color-palette-primary);
+    border: var(--sob-border-width-2) dashed var(--sob-color-background-default);
     border-radius: var(--sob-border-radius-2);
     width: 100%;
     display: flex;

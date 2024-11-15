@@ -10,6 +10,14 @@ const preview: Preview = {
                 date: /Date$/i,
             },
         },
+        backgrounds: {
+            default: 'custom', // Set the default background
+            values: [
+                { name: 'light', value: '#ffffff' }, // Light background
+                { name: 'dark', value: '#000000' }, // Dark background
+                { name: 'custom', value: '#f0f0f0' }, // Custom background
+            ],
+        },
     },
     decorators: [
         (StoryFn) => (

@@ -35,8 +35,8 @@ const NavBarItems = ({ children, className, plus = 'Plus', ...props }: NavBarIte
             >
                 <Tag
                     size='xs'
-                    bgColor='var(--sob-v2-color-palette-secondary)'
-                    textColor='var(--sob-v2-color-palette-primary)'
+                    bgColor='var(--sob-color-background-inverse)'
+                    textColor='var(--sob-font-color-default)'
                     id='sob-v2-navbar-plusTag-ref'
                     className='sob-v2-navbar-plusTag'
                 >

@@ -1,7 +1,26 @@
 import { FormGroup, Label, FormFeedback, Input } from '@/dataEntry';
 
 import { Meta, StoryObj } from '@storybook/react';
-
+/**
+ * Input and textarea
+ *
+ * ###Usage
+ *
+ *```JSX
+ *
+ * import {FormGroup , Label, Input, FormFeedback} from "@sobrus-com/sobrus-design-system"
+ * const Example = (props) => {
+ *    return (
+ *         <FormGroup>
+ *           <Label for="exampleText">Médecin traitant</Label>
+ *             <Input id="test" name="test" type="text" />
+ *             <FormFeedback invalid={true}>Sweet! that name is available</FormFeedback>
+ *           </FormGroup>
+ *    );
+ * }
+ * ```
+ *
+ */
 export default {
     title: 'Data entry/Input',
     component: Input,

@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import classNames from 'classnames';
-import { Button } from '@/actions';
+import './../button/button.scss';
 import './iconButton.scss';
 import { ButtonsGlobalProps, Colors, Size } from '@/components/types';
 
@@ -34,13 +34,55 @@ export interface IconButtonProps extends ButtonsGlobalProps {
     testId?: string;
 }
 const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
-    ({ className, size, children, type, ...props }, ref) => {
-        const classes = classNames('sob-v2-icon-btn', size ? `sob-v2-icon-btn-${size}` : '', className);
-
+    (
+        {
+            size,
+            className,
+            color,
+            disabled,
+            block,
+            loading,
+            children,
+            type = 'button',
+            'aria-label': ariaLabel,
+            testId,
+            ...props
+        },
+        ref,
+    ) => {
+        const classes = classNames(
+            'sob-v2-btn',
+            'sob-v2-icon-btn',
+            color ? `sob-v2-btn-${color}` : 'sob-v2-btn-primary',
+            size !== 'md' ? `sob-v2-btn-${size}` : '',
+            size !== 'md' ? `sob-v2-icon-btn-${size}` : '',
+            block ? 'sob-v2-btn-block' : '',
+            loading ? 'sob-v2-btn-loading' : '',
+            className,
+        );
         return (
-            <Button ref={ref} type={type} className={classes} {...props}>
+            <button
+                ref={ref}
+                data-testid={testId}
+                className={classes}
+                disabled={loading || disabled}
+                type={type}
+                aria-busy={loading}
+                aria-live={loading ? 'polite' : undefined}
+                aria-label={ariaLabel || (typeof children === 'string' ? children : undefined)}
+                aria-pressed={props['aria-pressed']}
+                aria-expanded={props['aria-expanded']}
+                {...props}
+            >
                 {children}
-            </Button>
+                {loading && (
+                    <div className='btn-loader' aria-hidden='true'>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                )}
+            </button>
         );
     },
 );

@@ -36,7 +36,6 @@ export const Icons: StoryObj<typeof Tag> = {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '24px',
-                backgroundColor: '#fff',
                 alignItems: 'flex-start',
             }}
         >
@@ -44,7 +43,6 @@ export const Icons: StoryObj<typeof Tag> = {
                 style={{
                     display: 'flex',
                     gap: '24px',
-                    backgroundColor: '#fff',
                     alignItems: 'center',
                 }}
             >
@@ -68,7 +66,6 @@ export const Icons: StoryObj<typeof Tag> = {
                 style={{
                     display: 'flex',
                     gap: '24px',
-                    backgroundColor: '#fff',
                     alignItems: 'center',
                 }}
             >
@@ -92,7 +89,6 @@ export const Icons: StoryObj<typeof Tag> = {
                 style={{
                     display: 'flex',
                     gap: '24px',
-                    backgroundColor: '#fff',
                     alignItems: 'center',
                 }}
             >

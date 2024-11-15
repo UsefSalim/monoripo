@@ -204,9 +204,9 @@
             pointer-events: none;
         }
     }
-    &-initial {
-        box-shadow: none;
-    }
+    // &-initial {
+    //     box-shadow: none;
+    // }
     &[disabled] {
         background: var(--sob-color-background-primary-disabled, #dae0e7) !important;
         color: var(--sob-color-text-primary-inverse, #fff);

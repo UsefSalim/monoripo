@@ -39,7 +39,7 @@
     height: 2.5rem;
 
     &:hover {
-        border: solid 0.0625rem var(--sob-color-palette-primary);
+        border: solid 0.0625rem var(--sob-color-background-default);
     }
 }
 
@@ -119,7 +119,7 @@
 
 .react-time-picker__button:enabled:hover .react-time-picker__button__icon,
 .react-time-picker__button:enabled:focus .react-time-picker__button__icon {
-    stroke: var(--sob-color-palette-primary);
+    stroke: var(--sob-color-background-default);
 }
 
 .react-time-picker__button:disabled .react-time-picker__button__icon {

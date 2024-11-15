@@ -1,0 +1,12 @@
+export * from './components/actions';
+export * from './components/animations';
+export { ConfigComponent } from './components/config/configComponent/configComponent';
+export * from './components/contentDisplay';
+export * from './components/dataEntry';
+export * from './components/exemple';
+export * from './components/feedbacks';
+export * from './components/grid/col/col';
+export * from './components/grid/row/row';
+export * from './components/grid/container/container';
+export * from './components/navigation';
+export * from './components/typography/typography/typography';

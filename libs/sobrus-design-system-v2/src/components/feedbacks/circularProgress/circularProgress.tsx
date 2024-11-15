@@ -39,7 +39,7 @@ const CircularProgress = ({
     variant = 'indeterminate',
     className,
     style,
-    color = 'var(--sob-v2-color-palette-primary)',
+    color = 'var(--sob-font-color-default)',
     ...props
 }: SobCircularProgressProps) => {
     const strokeDashoffset = 126 - (126 * value) / 100; // Adjusted for correct stroke size

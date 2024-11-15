@@ -1,31 +1,31 @@
 .sob-v2-accordion {
     width: 100%;
-    background-color: var(--sob-v2-background-color, #fff);
-    border-radius: var(--sob-v2-border-radius-3);
+    background-color: var(--sob-background-color, #fff);
+    border-radius: var(--sob-border-radius-3);
     padding: 0.75rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem !important;
-    box-shadow: var(--sob-v2-shadow-sm);
+    box-shadow: var(--sob-shadow-sm);
 }
 
 .sob-v2-accordion__button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: var(--sob-v2-secondary-bg-color, #f6f6f6) !important;
-    border-radius: var(--sob-v2-border-radius-3);
-    font-size: var(--sob-v2-font-size-4);
-    font-weight: var(--sob-v2-font-weight-regular);
+    background-color: var(--sob-secondary-bg-color, #f6f6f6) !important;
+    border-radius: var(--sob-border-radius-3);
+    font-size: var(--sob-font-size-4);
+    font-weight: var(--sob-font-weight-regular);
     padding: 0.5rem 0.75rem;
     position: relative;
     cursor: pointer;
     user-select: none;
-    box-shadow: var(--sob-v2-shadow-sm);
+    box-shadow: var(--sob-shadow-sm);
 }
 
 .sob-v2-accordion__button-icon {
-    margin-right: var(--sob-v2-space-2);
+    margin-right: var(--sob-space-2);
 }
 
 .sob-v2-accordion__button-icon svg,
@@ -34,8 +34,8 @@
 }
 
 .sob-v2-accordion__item {
-    background-color: var(--sob-v2-secondary-bg-color, #f6f6f6) !important;
-    border-radius: var(--sob-v2-border-radius-5) !important;
+    background-color: var(--sob-secondary-bg-color, #f6f6f6) !important;
+    border-radius: var(--sob-border-radius-5) !important;
 }
 
 .sob-v2-accordion__item + .sob-v2-accordion__item {
@@ -44,33 +44,33 @@
 
 .sob-v2-accordion__panel {
     padding: 0rem !important;
-    background-color: var(--sob-v2-secondary-bg-color, #f6f6f6) !important;
-    border-bottom-left-radius: var(--sob-v2-border-radius-2) !important;
-    border-bottom-right-radius: var(--sob-v2-border-radius-2) !important;
+    background-color: var(--sob-secondary-bg-color, #f6f6f6) !important;
+    border-bottom-left-radius: var(--sob-border-radius-2) !important;
+    border-bottom-right-radius: var(--sob-border-radius-2) !important;
     overflow: hidden !important;
     animation: fadein 1s ease-in-out;
     transition: max-height 2s ease-in-out;
 }
 
 .sob-v2-accordion__panel_item {
-    background-color: var(--sob-v2-secondary-bg-color, #f6f6f6);
-    padding: 0.375rem var(--sob-v2-space-7);
+    background-color: var(--sob-secondary-bg-color, #f6f6f6);
+    padding: 0.375rem var(--sob-space-7);
     padding-right: 1rem;
-    font-size: var(--sob-v2-font-size-4);
-    font-weight: var(--sob-v2-font-weight-regular);
+    font-size: var(--sob-font-size-4);
+    font-weight: var(--sob-font-weight-regular);
     cursor: pointer;
     user-select: none;
 }
 
 .sob-v2-accordion__panel_item.active {
-    background-color: var(--sob-v2-color-palette-secondary) !important;
-    color: var(--sob-v2-color-palette-primary);
-    font-weight: var(--sob-v2-font-weight-semibold);
+    background-color: var(--sob-color-background-inverse) !important;
+    color: var(--sob-font-color-default);
+    font-weight: var(--sob-font-weight-semibold);
 }
 
 .sob-v2-accordion__button[aria-expanded='true'],
 .sob-v2-accordion__button[aria-selected='true'] {
-    font-weight: var(--sob-v2-font-weight-meduim) !important;
+    font-weight: var(--sob-font-weight-meduim) !important;
     box-shadow: none;
 }
 

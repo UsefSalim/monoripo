@@ -1,6 +1,6 @@
 .sob-v2-navbar-user {
     margin-left: auto;
-    padding-left: var(--sob-v2-space-3);
+    padding-left: var(--sob-space-3);
     border-left: 0.0625rem solid var(--sob-gray-300);
     display: flex;
     align-items: center;
@@ -13,34 +13,34 @@
     .sob-v2-navbar-user-children {
         background-color: var(--sob-gray-white) !important;
         padding: 1rem !important;
-        box-shadow: var(--sob-v2-shadow-md) !important;
+        box-shadow: var(--sob-shadow-md) !important;
         border-radius: 0 !important;
         width: max-content !important;
         min-width: 11.25rem !important;
         opacity: 1 !important;
-        z-index: var(--sob-v2-zIndex-nav) !important;
+        z-index: var(--sob-zIndex-nav) !important;
 
         .sob-v2-navbar-user-profile,
         .sob-v2-navbar-user-logout {
             display: flex !important;
             align-items: center !important;
-            font-size: var(--sob-v2-font-size-4) !important;
-            font-weight: var(--sob-v2-font-weight-meduim) !important;
-            gap: var(--sob-v2-space-3) !important;
+            font-size: var(--sob-font-size-4) !important;
+            font-weight: var(--sob-font-weight-meduim) !important;
+            gap: var(--sob-space-3) !important;
 
             .label {
                 color: #000;
-                font-size: var(--sob-v2-font-size-4) !important;
+                font-size: var(--sob-font-size-4) !important;
             }
         }
 
         .sob-v2-navbar-user-profile {
-            padding-bottom: var(--sob-v2-space-3) !important;
+            padding-bottom: var(--sob-space-3) !important;
             border-bottom: 0.0625rem solid var(--sob-gray-300) !important;
         }
 
         .sob-v2-navbar-user-logout {
-            padding-top: var(--sob-v2-space-3) !important;
+            padding-top: var(--sob-space-3) !important;
         }
     }
 
@@ -50,7 +50,7 @@
 
         .sob-v2-navbar-user-fullName,
         .sob-v2-navbar-user-email {
-            font-size: var(--sob-v2-font-size-3) !important;
+            font-size: var(--sob-font-size-3) !important;
             white-space: nowrap !important;
             max-width: 10rem !important;
             overflow: hidden !important;
@@ -62,7 +62,7 @@
         box-shadow:
             0 1px 2px #a4acb93d,
             0 0 0 1px #1237691a;
-        border-radius: var(--sob-v2-space-3);
+        border-radius: var(--sob-space-3);
 
         svg {
             display: block;

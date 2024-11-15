@@ -37,15 +37,15 @@
     align-items: center;
 
     &:hover {
-        background-color: var(--sob-color-palette-secondary);
+        background-color: var(--sob-color-background-inverse);
 
         .TooltipMenu__menu-item-text {
-            color: var(--sob-color-palette-primary);
+            color: var(--sob-color-background-default);
             transform: scale(1.03);
             font-weight: var(--sob-font-weight-regular);
         }
 
-        color: var(--sob-color-palette-primary);
+        color: var(--sob-color-background-default);
     }
 }
 

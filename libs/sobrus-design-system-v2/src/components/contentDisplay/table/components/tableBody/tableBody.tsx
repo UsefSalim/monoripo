@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import { DivGlobalProps, TdGlobalProps } from '@/components/types';
 import { FC } from 'react';
 import { Card } from '@/containers';
-
+import './tableBody.scss';
 export type TdActionsProps = TdGlobalProps;
 
 export const TdActions: FC<TdActionsProps> = ({ children, ...props }) => {

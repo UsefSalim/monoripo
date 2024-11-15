@@ -4,7 +4,7 @@ import React, { FC, useEffect, useRef } from 'react';
 import { IconButton, IconButtonProps } from '@/actions';
 import { BsChevronDown } from 'react-icons/bs';
 import { HiOutlineSearch } from 'react-icons/hi';
-
+import './tableSearch.scss';
 export interface TableSearchRowProps extends TableRowGlobalProps {
     id: 'simple' | 'advanced';
     advanced?: boolean;

@@ -13,7 +13,45 @@ import {
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Button, IconButton } from '@/actions';
+/**
+ *
+ *A flexible CompositeInput
+* Use any Input type (InputSelect AsyncSelect....), wrap each input with a and add the desired width
+* Use any width to achieve the requirements
+*
+* ##Usage
+*
+*```JSX
+*
+* import {FormGroup,Label,CompositeInput,FormFeedback} from "@sobrus-com/sobrus-design-system"
+* const Example = (props) => {
+*    return (
+*      <FormGroup>
+*              <Label for="exampleSelect">Search select</Label>
+*              <CompositeInput>
+*                  <div style={{ width: '75%' }}>
+*                    <Input placeholder='text' name='composite' type='text' />
+*                   </div>
+*                   <div style={{ width: '25%' }}>
+*                     <InputSelect
+*                        // value={value}
+*                         // onChange={(e) => setValue(e)}
+*                        options={[
+*                            { value: 'hours', label: 'Heures' },
+*                            { value: 'days', label: 'Jours' },
+*                            { value: 'months', label: 'Mois' },
+*                            { value: 'years', label: 'Années' },
+*                       ]}
+*                    />
+*                  </div>
+*              </CompositeInput>
+*              <FormFeedback valid>Sweet! that name is available</FormFeedback>
+*      </FormGroup>
+*    );
+*   }
+* ```
 
+*/
 export default {
     title: 'Data entry/Composite Input',
     component: CompositeInput,
@@ -27,12 +65,11 @@ export default {
     subcomponents: { CompositeElement },
 } as Meta<typeof CompositeInput>;
 
-// Default CompositeInput Story
 export const Default: StoryObj<typeof CompositeInput> = {
     render: (args) => {
         const [value, setValue] = useState('');
         return (
-            <div style={{ width: '100%', height: 800 }}>
+            <div>
                 <FormGroup>
                     <Label htmlFor='exampleSelect'>Search select</Label>
                     <CompositeInput disabled size='sm' {...args}>

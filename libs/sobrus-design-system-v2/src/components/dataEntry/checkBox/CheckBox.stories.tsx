@@ -1,6 +1,26 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { CheckBox, FormGroup, FormFeedback } from '@/dataEntry';
-
+/**
+ *
+ * ###Usage
+ *
+ *
+ * the checkbox component accepte all InputHTMLAttributes properties
+ *
+ *```JSX
+ *
+ * import {CheckBox} from "@sobrus-com/sobrus-design-system"
+ * const Example = (props) => {
+ *    return (
+ *           <CheckBox
+ *                id="checkbox"
+ *              name="checkbox"
+ *        />
+ *    );
+ * }
+ * ```
+ *
+ */
 export default {
     title: 'Data entry/Checkbox',
     component: CheckBox,

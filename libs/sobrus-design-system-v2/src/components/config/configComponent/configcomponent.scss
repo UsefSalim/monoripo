@@ -1,5 +1,6 @@
 @use '../../../globalcss/normalize';
 @use '../../../globalcss/default';
+@use '../../../globalcss/colors';
 :root {
     --sob-font-weight-regular: 400;
     --sob-font-weight-medium: 500;
@@ -172,4 +173,13 @@
 
     --sob-size-sm: 1.875rem;
     --sob-size-md: 2.5rem;
+
+    --sob-shadow-sm: 0rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+    --sob-shadow-md: 0rem 0.125rem 0.5rem rgba(0, 0, 0, 0.16), 0rem 0rem 0.125rem rgba(0, 0, 0, 0.16);
+    --sob-shadow-lg: 0rem 0.25rem 0.75rem rgba(0, 0, 0, 0.16), 0rem 0rem 0.25rem rgba(0, 0, 0, 0.16);
+
+    --sob-zIndex-0: 0;
+    --sob-zIndex-1: 1;
+    --sob-zIndex-nav: 100;
+    --sob-zIndex-modals: 1300;
 }
